@@ -358,7 +358,7 @@ Universidad Tecnológica Nacional (UTN)
 
 # Profesor
 
-* [Nombre del Profesor]
+* [Alexis Bianchi]
 
 # Estructura de Entrega
 

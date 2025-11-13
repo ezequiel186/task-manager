@@ -151,9 +151,16 @@ export default function Tasks() {
         </div>
       </header>
 
+      {/* ✅ BLOQUE DE ACCIONES INTEGRADO */}
       <div className="actions-bar">
         <button 
-          onClick={() => setShowTaskForm(!showTaskForm)} 
+          onClick={() => {
+            if (showTaskForm) {
+              resetTaskForm();
+            } else {
+              setShowTaskForm(true);
+            }
+          }} 
           className="btn-action"
         >
           {showTaskForm ? '❌ Cancelar' : '➕ Nueva Tarea'}
@@ -168,6 +175,7 @@ export default function Tasks() {
           📥 Exportar CSV
         </button>
       </div>
+      {/* ✅ FIN BLOQUE */}
 
       {showCategoryForm && (
         <div className="form-card">
